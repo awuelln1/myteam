@@ -1,0 +1,25 @@
+.jumbotron {
+  background-color: navy;
+  color: gold;
+
+
+}
+body {
+	font-family: 'Droid Sans', 'arial';
+	background-image: url(flopsbackground2.jpg);
+	background-size: cover;
+	position: center center;
+	background-attachment: fixed;	
+}
+
+img {
+	border: 10px solid grey;
+	border-width: 1px;
+	border-radius: 10px;
+	height: 275px;
+	box-shadow: 10px 10px 5px grey;
+	position: center center;
+}
+div#Notre {
+	color: blue;
+}

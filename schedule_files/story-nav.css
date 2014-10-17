@@ -1,0 +1,301 @@
+#storyNavBar {
+    padding: 0 !important;
+    font-size: 10px !important;
+    font-family: arial, helvetica, sans-serif !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    height: 38px !important;
+    margin: 10px 0px 16px 0px !important;    
+    border-bottom: solid 1px #eee !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+    z-index: 1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;    
+}
+#storyNavBar a {
+    text-decoration: none !important;
+    cursor: pointer !important; 
+}
+#storyNavBar a:hover {
+    color: #000 !important;
+}
+#storyNavBar ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    background-image: none !important;
+}
+#storyNavBar li {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    font-family: arial, helvetica, sans-serif !important;
+}
+#storyNavBar *, #storyNavBar*:before, #storyNavBar*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+#storyNavBar * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;   
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#storyNavBar iframe {
+    padding: 0 !important;
+}
+#storyNavBar .IN-widget, #storyNavBar .IN-widget * {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;      
+}
+#storyNavBar #sharebar-wrapper {
+    float: left !important;
+    height: 26px !important;
+}
+#storyNavBar #right-side {
+    float: right !important;
+} 
+#storyNavBar #articleOptions {
+    height: 26px !important;
+    overflow: hidden !important;
+    padding: 6px 4px 0 0 !important;
+}
+#storyNavBar #articleOptions li {
+    display:block !important;
+    float: left !important;
+    margin: 0 0 0 4px !important;
+    color: #555 !important;
+    text-align: center !important;
+    background: #fff !important;
+    background: #eee !important;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))) !important;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    border: solid 1px #ddd !important;
+    border-radius: 2px !important;    
+}
+#storyNavBar #articleOptions li:hover {
+    border: solid 1px #c5c5c5 !important;
+}
+#storyNavBar #articleOptions li a {
+    color: #555 !important;
+    height: 18px !important;
+    display: block !important;
+    line-height: 18px !important;
+    padding: 0 4px !important;
+    width: 55px !important;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;      
+}
+#storyNavBar #articleOptions li a:hover {
+    background: #efefef !important;
+    color: #222 !important;
+}
+#storyNavBar #articleOptions li a:active {
+    background: #ddd !important;
+    color: #a9a9a9 !important;
+}
+#storyNavBar #articleOptions li a img {
+    width: 14px !important;
+    height: 14px !important;
+    display: block !important;
+    line-height: 18px !important;
+    vertical-align: middle !important;
+    float: left !important;
+    margin-top: 2px !important;
+}
+#storyNavBar #articleOptions li .plus-minus {
+    background: #eee !important;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))) !important;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    width: 77px !important;
+    height: 18px !important;
+    overflow: hidden !important;
+    line-height: 18px !important;
+    overflow: hidden !important;
+}
+#storyNavBar #articleOptions li .plus-minus span {
+    padding-right: 5px !important;
+}
+#storyNavBar #articleOptions li div a {
+    width: 15px !important;
+    display: block !important;
+    float: left !important;
+    height: 18px !important;
+}
+#storyNavBar .fb-share-button {
+    float: left !important;
+    margin: 0 0 0 4px !important;
+}
+#storyNavBar .twitter-share-button {
+    float: left !important;
+    margin: 0 0 0 5px !important;
+}
+#storyNavBar .twitter-share-button {
+    float: left !important;
+    margin: 0 0 0 5px !important;
+}
+#storyNavBar #sharebar-wrapper {
+    padding: 6px 0 0 4px !important;
+}
+#storyNavBar #sharebar-wrapper ul {
+    float: left !important;
+    margin: 0 !important;
+}
+#storyNavBar #sharebar-wrapper > ul > li {
+    position: relative !important;
+    z-index: 0 !important;
+    margin: 0 !important;
+}
+#storyNavBar #sharebar-wrapper > ul > li > a {
+    background: #eee !important;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))) !important;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    border: solid 1px #ddd !important;
+    border-radius: 3px !important;
+    color: #555 !important;
+    height: 20px !important;
+    display: block !important;
+    line-height: 18px !important;
+    padding: 0 4px !important;
+    width: 60px !important;
+    text-align: center !important;
+}
+#storyNavBar #sharebar-wrapper > ul > li > a > img {
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-block !important;
+    line-height: 18px !important;
+    vertical-align: middle !important;
+    float: left !important;
+    padding-top: 2px !important;
+}
+#storyNavBar #sharebar-wrapper > ul > li > ul {
+    text-transform: uppercase !important;
+    display: none !important;
+    position: absolute !important;
+    top: 22px !important;
+    z-index: 15000 !important;
+    background: #fdfdfd !important;
+    border: solid 1px #ddd !important;
+    border-top: solid 1px #ccc !important;
+    padding: 10px !important;
+    width: 150px !important;
+    box-shadow: 0 1px 7px rgba(150,150,150,0.4) !important;
+}
+#storyNavBar.share-menu-open #sharebar-wrapper >  ul > li > ul {
+    display: block !important;
+}
+#storyNavBar #sharebar-wrapper > ul > li:hover > a {
+    background: #efefef !important;
+    color: #222 !important;
+    border: solid 1px #c5c5c5 !important;
+}
+#storyNavBar.share-menu-open #sharebar-wrapper > ul > li > a {
+    background: #ddd !important;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1) inset !important;
+    border: solid 1px #ccc !important;
+    color: #555 !important;
+    border-radius: 0 !important;
+    height: 21px !important;
+    -webkit-border-top-left-radius: 3px !important;
+    -webkit-border-top-right-radius: 3px !important;
+    -moz-border-radius-topleft: 3px !important;
+    -moz-border-radius-topright: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;    
+}
+#storyNavBar #sharebar-wrapper  ul li ul li {
+    padding: 8px 0 !important;
+    border-bottom: solid 1px rgba(0,0,0,0.05) !important;
+}
+#storyNavBar #sharebar-wrapper  ul li ul li:last-child {
+    border: none !important;
+}
+#storyNavBar #sharebar-wrapper a .icon-name {
+    color: #333 !important;
+    vertical-align: middle !important;
+    text-shadow: #FFFFFF -1px 1px 0 !important;
+    font-size: 11px !important;
+}
+#storyNavBar #sharebar-wrapper a:hover .icon-name {
+    text-decoration: underline !important;
+}
+#storyNavBar #sharebar-wrapper .icon-bg {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 2px !important;
+    padding: 2px !important;
+    line-height: 20px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    margin: 0 4px 0 0 !important;
+}
+#storyNavBar #sharebar-wrapper .share-bar-generic-button .icon-bg img {
+    width: 16px !important;
+    height: 16px !important;
+    vertical-align: middle !important;
+}
+#storyNavBar #sharebar-wrapper  ul li ul li a.share-bar-generic-button {
+    display: inline-block !important;
+    padding-right: 5px !important;
+    background: #eee !important;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))) !important;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%) !important;
+    border: solid 1px #ddd !important;
+    border-radius: 3px !important;
+    height: 22px !important;
+    overflow: hidden !important;
+}
+#storyNavBar #sharebar-wrapper  ul li ul li a.share-bar-generic-button:hover .icon-name {
+    text-decoration: none !important;
+}
+#storyNavBar #sharebar-wrapper  ul li ul li a.share-bar-generic-button:hover {
+    border: solid 1px #aaa !important;
+}
+#storyNavBar .fb-share-button {
+    width: auto !important;
+}
+@media (max-width: 767px) {
+    #storyNavBar #articleOptions li a {
+        width: 15px !important;
+    }
+    #storyNavBar .share-lg {
+        display: none !important;
+    }
+    #storyNavBar #articleOptions li .plus-minus {
+        width: 47px !important;
+    }
+    #storyNavBar #sharebar-wrapper > ul > li > a {
+        width: 23px !important;
+    }
+    #storyNavBar #articleOptions .plus-minus {
+        display: none !important;
+    }
+}

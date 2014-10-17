@@ -1,0 +1,271 @@
+#jcal-machine-wrapper {
+    background: #333 url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-bg-gra1.jpg') no-repeat right top;
+    width: 300px;
+    height: 220px;
+    position: relative;
+    font-family: arial, helvetica, sans-serif !important;
+    font-size: 9px;
+    /*text-transform: uppercase; */    
+    overflow: hidden; 
+}
+#jcal-machine { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#jcal-machine * { line-height: 1em; }
+#jcal-machine-loading { position: absolute; color: #ccc; left: 10px; top: 5px; }
+#jcal-error { position: absolute; color: #ccc; left: 10px; top: 5px; }
+
+#jcal-composite { z-index: 5; position: absolute; bottom: 0px; width: 100%; height: 14px; background: #333 url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-composite-swipe.jpg') repeat-x; }
+#jcal-composite a { cursor: pointer !important; text-indent: -9999px; background: #333 url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-composite-buttona.jpg') no-repeat center center; width: 194px; height: 14px; display: block; margin: 0 auto; }
+#jcal-composite a:hover { opacity: .7; filter: alpha(opacity=70); }
+
+/* -- next/pause/prev buttons --*/
+
+#jcal-prev a { 
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    background: #111 url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-nav-left.png') no-repeat center center;
+}
+#jcal-next a { 
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #111 url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-nav-right.png') no-repeat center center;
+}
+#jcal-prev a, #jcal-next a  { 
+    display: block;
+    width: 14px;
+    height: 30px;
+    cursor: pointer !important;
+    border: solid 1px #333;
+    text-indent: -9999px;
+}
+#jcal-prev a:hover, #jcal-next a:hover{ opacity: .95; }
+#jcal-prev a:active, #jcal-next a:active{ opacity: .7;  }
+
+#jcal-next {
+    z-index: 10;
+    top: 40%;
+    right: 0px;
+    position: absolute;
+    
+}
+#jcal-prev {
+    z-index: 10;
+    top: 40%;
+    left: 0px;
+    position: absolute;
+}
+
+/*-- general event items --*/
+#jcal-machine-slider { height: 100%; position: absolute; margin: 0; padding: 0; list-style: none; top: 0; left: 0; -webkit-perspective: 0;  }
+#jcal-machine-slider li { 
+    padding: 4px 5px 0px 5px;
+    width: 120px;  
+    height: 100%;  
+    overflow: hidden;
+    color: #fff;
+    float: left;
+    -webkit-perspective: 0; 
+}
+#jcal-machine li { position: relative; }
+#jcal-machine li.expired { color: #fff; background: #fff url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-bg-exp130a.jpg') no-repeat; }
+#jcal-machine li.upcoming { color: #000; background: #fff url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-bg-upc130a.jpg') no-repeat; }
+#jcal-machine li.inprogress { color: #000; background: #fff url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-bg-live130a.jpg') no-repeat; }
+
+#jcal-machine div.jc-pos {  }
+
+#jcal-machine div.jc-loading { width: 50px; height: 50px; margin: 50px auto 0 auto; background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-loading.gif') no-repeat center center; }
+
+
+#jcal-machine li a { color: #000; text-decoration: none; }
+#jcal-machine li.expired a { color: #fff; text-decoration: none; }
+#jcal-machine li a:hover { text-decoration: underline; }
+
+/*-- teams & scores --*/
+#jcal-machine-slider .jc-teama {
+    margin: 0 auto;
+	width: 120px;
+    height: 12px;
+    margin-bottom: 1px;
+}
+#jcal-machine-slider .jc-teamb {
+    margin: 0 auto;
+	width: 120px;
+    height: 12px;
+    padding-bottom: 5px;
+}
+#jcal-machine-slider .jc-teamname { 
+    float: left; 
+    width:100px;
+    overflow: hidden;
+    height: 1.05em;
+    }
+#jcal-machine-slider li div.jc-scoreb, #jcal-machine-slider li div.jc-scorea { 
+    position: static; 
+    float: right;
+    text-align: right; 
+    width: 15px;
+    font-weight: bold;
+}
+#jcal-machine-slider .theloser { color: #aaa; }
+
+#jcal-machine-slider .jc-logo { text-align: center; height: 35px;  }
+#jcal-machine-slider .jc-logo img { height: 35px;  }
+#jcal-machine-slider .jc-fadelogo { opacity: .2; filter: alpha(opacity=20); }
+/*-- date time --*/
+#jcal-machine-slider .jc-spacing { padding-bottom: 0px; height: 12px; overflow: hidden; width: 115px;line-height: 12px; }
+#jcal-machine-slider .jc-date {
+    padding: 3px 0 5px 0;
+    color: #fff;
+	width: 120px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	font-size: 8px;
+	font-weight: bold;
+	height: 13px;
+}
+#jcal-machine-slider .jc-eventname {
+	text-align: center;
+	height: 3.5em;
+	overflow: hidden;    
+}
+#jcal-machine-slider .jc-eventresults {
+}
+#jcal-machine-slider .jc-outcome {
+	padding: 5px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#jcal-machine-slider .jc-vs {
+	text-align: center;
+	height: 2.0em;
+	font-size: 10px;
+	overflow: hidden;
+}
+#jcal-machine-slider .jc-status {
+    padding: 0 0 4px 0;
+    margin: 0px 0 5px 0;
+    width: 120px;
+    font-weight: bold;
+    border-bottom: dotted 1px #aaa;
+}
+#jcal-machine-slider .jc-location {
+    text-align: center;
+    color: #777;
+}
+#jcal-machine-slider .jc-time {
+    text-align: center;
+    font-weight: bold;
+    border-top: dotted 1px #aaa;
+    margin-top: 3px;
+    padding-top: 4px;
+    font-size: 11px;
+}
+#jcal-machine-slider .jc-recap, #jcal-machine-slider .jc-stats { margin-left: 15px; }
+#jcal-machine-slider .jc-recap a { cursor: pointer; }
+/*-- sportname --*/
+#jcal-machine-slider .jc-sport {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	padding-bottom: 2px;
+}
+/*-- extras --*/
+
+#jcal-machine-slider .jc-section-noicons { margin: 4px 0 5px; }
+#jcal-machine-slider .jc-bottom-area { 
+	z-index: 1;
+    position: absolute;     
+    bottom: 20px;
+	left: 5px;
+}
+#jcal-machine-slider .jc-gt a {
+    display: block;
+	height: 9px;
+	width: 120px;
+	text-indent: -9999px;
+	background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-gt1.png') no-repeat center top;	
+}
+#jcal-machine-slider li.expired .jc-gt a {
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-gt1W.png') no-repeat center top;
+}
+#jcal-machine-slider .jc-preview a {
+    margin-top: 4px;
+    display: block;
+	height: 19px;
+	width: 129px;
+	text-indent: -9999px;
+	margin: 0 -5px;
+	background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-pv4.png') no-repeat center bottom;
+}
+#jcal-machine-slider .jc-preview a:hover, #jcal-machine-slider .jc-gt a:hover { opacity: .7; }
+
+/* icons */
+.jcal-icon-tv { 
+    display: inline-block;
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-tv.png') no-repeat center bottom;
+    width: 12px;
+    height: 10px;
+    margin-right: 1px;
+}
+li.expired .jcal-icon-tv { background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-tvW.png') no-repeat center bottom; }
+
+.jcal-icon-radio { 
+    display: inline-block;
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-radio.png') no-repeat center bottom;
+    width: 12px;
+    height: 10px;
+    margin-right: 1px;
+}
+li.expired .jcal-icon-radio { background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-radioW.png') no-repeat center bottom; }
+
+.jcal-icon-video { 
+    display: inline-block;
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-video.png') no-repeat center bottom;
+    width: 12px;
+    height: 10px;
+    margin-right: 3px;
+}
+li.expired .jcal-icon-video { background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-videoW.png') no-repeat center bottom; }
+
+.jcal-icon-audio { 
+    display: inline-block;
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-audio.png') no-repeat center bottom;
+    width: 12px;
+    height: 10px;
+    margin-right: 3px;
+}
+li.expired .jcal-icon-audio  { background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-audioW.png') no-repeat center bottom; }
+
+.jcal-icon-stats { 
+    display: inline-block;
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-stats.png') no-repeat center bottom;
+    width: 12px;
+    height: 10px;
+    margin-right: 3px;
+}
+li.expired .jcal-icon-stats { background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-statsW.png') no-repeat center bottom; }
+
+.jcal-icon-tix { 
+    display: inline-block;
+    background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-tix.png') no-repeat center bottom;
+    width: 12px;
+    height: 10px;
+    margin-right: 3px;
+}
+li.expired .jcal-icon-tix { background: url('http://grfx.cstv.com/scripts/csui/calendar/graphics/jcal-icon-tixW.png') no-repeat center bottom; }
